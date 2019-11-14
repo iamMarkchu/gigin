@@ -1,6 +1,20 @@
 appName: "gigin"
+web:
+  port: ":8888"
 mysql:
   host: "127.0.0.1"
   user: "root"
   password: "root"
   port: 3306
+route:
+    path: "/"
+    child:
+      index:
+        path: "index"
+        method: "GET"
+        action: "IndexController.index"
+
+
+
+
+
